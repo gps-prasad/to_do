@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:rgb(67,83,255);
+    padding: 10px;
+}
+.container{
+    margin: 30px auto;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    min-height: 50vh;
+}
+hr{
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border-color: black;
+    background-color: black;
+}
+h1{
+    width: 100%;
+    text-align: center;
+}
+.inp{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.inp .txt{
+    border-radius: 8px;
+    padding: 5px;
+    width: 250px;
+}
+.add{
+    padding: 7px;
+    border-radius: 8px;
+    margin: 0px 5px;
+    width: 50px;
+    background: rgb(67,83,255);
+    color: white;
+    font-weight: 700;
+    border: rgb(67,83,255);
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(196,225,229);
+    padding: 7px;
+    margin: 8px 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+.modify{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.todo .txt{
+    background: transparent;
+    border: 0px;
+    margin: 0px 5px;
+    cursor: pointer;
+    width: 250px;
+}
+.todo .txt:focus{
+    outline: none;
+}
+.todo .edit ,.todo .del{
+    padding:0px 5px;
+    border-radius: 5px;
+    background: transparent;
+    font-weight: 700;
+    border: 0px;
+    cursor: pointer;
+}
+.todo .edit{
+    color: green;
+    width: 40px;
+}
+.todo .del{
+    color:red;
+}
+.strike{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:280px) {
+    .todo .txt,.inp .txt{
+        letter-spacing: 2px;
+    }
+    .todo{
+        flex-direction: column;
+    }
+    .modify{
+        justify-content: right;
+    }
+}
